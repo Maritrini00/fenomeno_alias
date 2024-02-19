@@ -12,7 +12,7 @@ def calcularFrecuencia(components, fs, fmin, fmax):
         #si el resultado es mayor o menor al limite del ancho de banda (frecuencia aliada)
         while result > fmax or result < fmin:
             #se suplanta la frecuencia aliada
-            result = abs(result - (n)(fs)) # se resta el resultado de la frecuencia menos el producto de n por la frecuencia de muestreo
+            result = abs(result - n*fs) # se resta el resultado de la frecuencia menos el producto de n por la frecuencia de muestreo
             n =+ 1 # se incrementa el numero de n en uno
         result_list.append(result) # se anexan las frecuencias en la lista resulatnte
     return result_list
